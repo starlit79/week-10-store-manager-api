@@ -15,7 +15,6 @@ router.post('/', async (apiRequest, apiResponse) => {
   apiResponse.send({
     message: 'New product created.',
     allProducts: await getProducts(),
-    thanks: true
   });
 });
 
