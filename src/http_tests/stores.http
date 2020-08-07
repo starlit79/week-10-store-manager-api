@@ -1,8 +1,26 @@
 ### Test the stores
 ### stores are the customers such as each golf course
-
 GET http://localhost:3001/stores
 
 ### Test creating a store
 
-### Test the PUT which should change a store
+### Test creating a product
+POST http://localhost:3001/stores
+Content-Type: application/json
+
+{
+  "title": "Golf Unlimited",
+  "location": "Houston, Texas"
+}
+
+### Test the PUT which should change a product
+### id of 5f2cb23ef0f38e4034393d6e is temporary while server is running
+PUT http://localhost:3001/stores/5f2cb23ef0f38e4034393d6e
+Content-Type: application/json
+
+{
+  "title": "Golfing Pros"
+}
+
+###Test the DELETE which should delete a store
+DELETE http://localhost:3001/stores/5f2cb23ef0f38e4034393d6e

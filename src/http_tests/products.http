@@ -13,11 +13,16 @@ Content-Type: application/json
 
 ### Test the PUT which should change a product
 ### id of 5f2b54de320478eb4b1603eb is temporary while server is running
-PUT http://localhost:3001/product
+PUT http://localhost:3001/products
 Content-Type: application/json
 
 {
   "title": "Amazing UV Shirt"
 }
+
+###
+DELETE http://localhost:3001/products/5f2c92abb33cd324ea9d5c5b
+
+
 
 
