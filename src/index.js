@@ -18,6 +18,7 @@ app.use('/products', require('./routes/productsRoutes'))
 app.use('/logos', require('./routes/logosRoutes'))
 app.use('/stores', require('./routes/storesRoutes'))
 app.use('/productTypes', require('./routes/productTypesRoutes'))
+app.use('/categories', require('./routes/categoriesRoutes'))
 
 // connect to our database
 // https://www.mongodb.com/

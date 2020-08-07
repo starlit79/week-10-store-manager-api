@@ -1,8 +1,27 @@
-### Test the stores
-### stores are the customers such as each golf course
+### Test the home page endpoint
 
-GET http://localhost:3001/stores
+GET http://localhost:3001/categories
 
-### Test creating a store
+### Test creating a logo after you build the code for adding a logo
+POST http://localhost:3001/categories
+Content-Type: application/json
 
-### Test the PUT which should change a store
+{
+  "category 7": "Kids"
+}
+
+### Test the PUT which should change a logo
+PUT http://localhost:3001/categories/5f2de20d30811a49e8748337
+Content-Type: application/json
+
+{
+  "category 5": "Women's Golfwear"
+}
+
+### Test the DELETE which should delete a logo
+
+###
+DELETE http://localhost:3001/categories/5f2de20d30811a49e8748337
+
+
+
