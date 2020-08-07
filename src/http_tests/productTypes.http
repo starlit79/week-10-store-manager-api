@@ -4,8 +4,25 @@
 
 # Product attributes contain additional product information, e.g. ISBN, UPC, Brand, which is displayed in storefront and included in product feeds when exporting to marketplaces like Google Shopping, eBay, Amazon ads etc.
 
-GET http://localhost:3001/product-types
+GET http://localhost:3001/productTypes
 
 ### Test creating a type
+POST http://localhost:3001/productTypes
+Content-Type: application/json
+
+{
+  "title": "Headband",
+  "description": "Accessories"
+}
 
 ### Test the PUT which should change a type
+// https://docs.mongodb.com/manual/reference/method/ObjectId/
+PUT http://localhost:3001/productTypes/5f2d75ac940537241c16627d
+Content-Type: application/json
+
+{
+  "title": "Apparels"
+}
+
+### DELETE
+DELETE http://localhost:3001/productTypes/5f2d75ac940537241c16627d

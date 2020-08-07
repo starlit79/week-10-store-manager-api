@@ -22,7 +22,7 @@ router.put('/:id', async (apiRequest, apiResponse) => {
   apiResponse.send({ message: 'Logo updated.' });
 });
 
-router.delete('/:LogoId', async (apiRequest, apiResponse) => {
+router.delete('/:logoId', async (apiRequest, apiResponse) => {
   await deleteLogo(apiRequest.params.logoId);
   apiResponse.send({ message: 'Logo deleted.' });
 });

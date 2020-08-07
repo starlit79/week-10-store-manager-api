@@ -3,8 +3,6 @@
 GET http://localhost:3001/stores
 
 ### Test creating a store
-
-### Test creating a product
 POST http://localhost:3001/stores
 Content-Type: application/json
 
@@ -19,7 +17,7 @@ PUT http://localhost:3001/stores/5f2cb23ef0f38e4034393d6e
 Content-Type: application/json
 
 {
-  "title": "Golfing Pros"
+  "title": "Golfing Genius"
 }
 
 ###Test the DELETE which should delete a store

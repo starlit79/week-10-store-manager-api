@@ -23,7 +23,7 @@ Content-Type: application/json
 ### Test the DELETE which should delete a logo
 
 ###
-DELETE http://localhost:3001/logos/5f2c92abb33cd324ea9d5c5b
+DELETE http://localhost:3001/logos/5f2cabc4236bde32a4ed1efb
 
 
 

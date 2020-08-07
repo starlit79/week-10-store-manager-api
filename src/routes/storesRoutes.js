@@ -22,7 +22,7 @@ router.put('/:id', async (apiRequest, apiResponse) => {
   apiResponse.send({ message: 'Store updated.' });
 });
 
-router.delete('/:StoreId', async (apiRequest, apiResponse) => {
+router.delete('/:storeId', async (apiRequest, apiResponse) => {
   await deleteStore(apiRequest.params.storeId);
   apiResponse.send({ message: 'Store deleted.' });
 });
